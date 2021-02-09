@@ -99,6 +99,10 @@ td {
   margin-right: auto;
   display: block;
 }
+.image {
+  width: 90%;
+  align-self: center;
+}
 
 .link-white {
   color: white;

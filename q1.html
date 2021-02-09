@@ -15,12 +15,20 @@
             let result = "";
 
             if (answer == "b") {
-                result = "You got it right! Congrats!!"
+                document.getElementById('result-right').innerHTML = "You got it right! Congrats!!";
+                document.getElementById('result-wrong').innerHTML = "";
+
+                const image = document.getElementById('image');
+                const img = document.createElement('img');
+
+                img.src = "./image.png";
+                image.appendChild(img);
             } else {
-                result = "YOU FUCKN SUCK"
+                document.getElementById('result-wrong').innerHTML = "YOU FUCKN SUCK";
+                document.getElementById('result-right').innerHTML = "";
             }
 
-            return document.getElementById('results').innerHTML = result;
+            return
         };
 
     </script>
@@ -74,7 +82,11 @@
 
     </br>
 
-    <div id="results">
+    <div class="result" id="results">
+        <p id="result-wrong" style="color: red;"></p>
+        <p id="result-right" style="color: green;"></p>
+    </div>
+    <div class="image" id="image">
 
     </div>
 
