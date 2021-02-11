@@ -22,10 +22,12 @@
                 const img = document.createElement('img');
 
                 img.src = "./image.png";
+                img.className = "eq-img";
                 image.appendChild(img);
             } else {
                 document.getElementById('result-wrong').innerHTML = "YOU FUCKN SUCK";
                 document.getElementById('result-right').innerHTML = "";
+                document.getElementById('image').innerHTML = "";
             }
 
             return
@@ -43,9 +45,8 @@
 
     </header>
 
-    <h1>Question 1</h1>
-
     <div class="page-content">
+        <h1>Question 1</h1>
         <p>Here's the question?</p>
         <div class="container mt-4">
             <div class="form-check">
@@ -74,26 +75,26 @@
             </div>
         </div>
 
-    </div>
+        <div class="center" onload="submit()">
+            <button id="submit" onclick="submit()">Submit</button>
+        </div>
 
-    <div class="center" onload="submit()">
-        <button id="submit" onclick="submit()">Submit</button>
-    </div>
+        </br>
 
-    </br>
+        <div class="result" id="results">
+            <p id="result-wrong" style="color: red;"></p>
+            <p id="result-right" style="color: green;"></p>
+        </div>
+        <div id="image">
 
-    <div class="result" id="results">
-        <p id="result-wrong" style="color: red;"></p>
-        <p id="result-right" style="color: green;"></p>
-    </div>
-    <div class="image" id="image">
+        </div>
 
-    </div>
+        </br>
 
-    </br>
+        <div class="center">
+            <button id="next">Next Question</button>
+        </div>
 
-    <div class="center">
-        <button id="next">Next Question</button>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

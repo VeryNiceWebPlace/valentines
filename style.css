@@ -92,18 +92,13 @@ td {
 }
 
 .eq-img {
-  max-width: 100%;
+  max-width: 95%;
   height: auto;
   object-fit: contain;
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
-.image {
-  width: 90%;
-  align-self: center;
-}
-
 .link-white {
   color: white;
 }
