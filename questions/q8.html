@@ -15,9 +15,9 @@
             let result = "";
 
             //CHANGE
-            if (answer != "c") {
+            if (answer == "a") {
 
-                document.getElementById('result-right').innerHTML = "Correct! You have unlocked the final question and completed the quiz! Well played!!";
+                document.getElementById('result-right').innerHTML = "Correct! You have unlocked the final memory and completed the quiz! Well played!!";
                 document.getElementById('result-wrong').innerHTML = "";
                 document.getElementById('image').innerHTML = "";
 
@@ -26,16 +26,16 @@
                 const caption = document.createElement('p');
 
                 //CHANGE
-                img.src = "../pictures/7.jpg";
+                img.src = "../pictures/8.png";
                 img.className = "eq-img";
                 image.appendChild(img);
 
                 //CHANGE
-                caption.innerHTML = "13/12/20: A great Christmas";
+                caption.innerHTML = "07/02/21: Who knows what's going on here but I look forward to more!";
                 image.appendChild(caption);
             } else {
                 //CHANGE
-                document.getElementById('result-wrong').innerHTML = "THERE'S LITERALLY ONE WRONG ANSWER??!";
+                document.getElementById('result-wrong').innerHTML = "HUHH???";
                 document.getElementById('result-right').innerHTML = "";
                 document.getElementById('image').innerHTML = "";
 
@@ -43,7 +43,7 @@
                 const img2 = document.createElement('img');
 
                 //CHANGE
-                img2.src = "../pictures/w7.jpg";
+                img2.src = "../pictures/w8.jpg";
                 img2.className = "eq-img";
                 image2.appendChild(img2);
             }
@@ -64,32 +64,32 @@
     </header>
 
     <div class="page-content">
-        <h1>Question 7</h1>
+        <h1>Question 8</h1>
         </br>
-        <h6>Merry...?</h6>
+        <h6>Will you be my Valentines?</h6>
         <div class="container mt-4">
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="answers" id="A" value="a">
                 <label class="form-check-label" for="A">
-                    A) Chrysler
+                    A) Yes!
                 </label>
             </div>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="answers" id="B" value="b">
                 <label class="form-check-label" for="B">
-                    B) Chrismn
+                    B) Who tf is Balen Thymes
                 </label>
             </div>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="answers" id="C" value="c">
                 <label class="form-check-label" for="C">
-                    C) Christmas
+                    C) New fone who dis?
                 </label>
             </div>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="answers" id="D" value="d">
                 <label class="form-check-label" for="D">
-                    D) Chrysus
+                    D) Nah, Matthew McConaughey already asked me (oooh more salt)
                 </label>
             </div>
         </div>
